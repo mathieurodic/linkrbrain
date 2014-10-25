@@ -34,70 +34,41 @@ a:hover	{text-decoration:none}
 body	{font-size:13px}
 
 
+#top {background:#EEE;padding:.5em 0 1em 0;text-align:center;box-shadow:0 .2em .75em rgba(0,0,0,0.25);position:fixed;width:100%;left:0;top:0;border-bottom:solid 1px #CCC;opacity:.97}
+    #top *  {color:#444;text-shadow:0em .2em .2em rgba(0,0,0,.25)}
+    #top a:hover    {color:#000}
+    #top .logo, #top .menu  {}
+    #top .logo  {}
+        #top .logo * {color:#888}
+        #top .logo h1 {margin-bottom:.2em}
+            #top .logo h1 a {color:#000}
+    #top .menu  {position:absolute;left:3em;bottom:1em}
+        #top .menu a {margin-left:2em}
+        #top .menu a:first-child {margin:0}
+    #top .try  {position:absolute;right:3em;bottom:1em}
 
-#middle	{padding:1em}
 
-	#left	{float:left;width:16em}
-		#left *	{color:#888;text-decoration:none}
-		#left .logo, #left .menu, #left .try	{margin:1em;margin-bottom:2em;padding:1em}
-		#left .logo, #left .menu	{border:solid 1px #CCC;background:#F8F8F8}
-		#left .logo	{padding:1em 0}
-		#left .menu	{}
-			#left .logo span	{color:#CCC}
-			#left h1, #left p, #left ul	{}
-			#left h1, #left p	{text-align:center}
-			#left h1	{font-size:2em;font-weight:bold}
-			#left p	{font-size:0.7em;line-height:1.4em}
-			#left ul	{list-style:none;padding-top:1.5em}
-				#left li	{margin-bottom:1em;font-weight:bold;position:relative}
-					#left li a:hover	{color:#444}
-				#left li ul	{padding-top:0.25em;padding-left:0.125em}
-					#left li ul li	{padding:0;font-weight:normal;margin-bottom:0.2em;font-size:0.8em}
-			#left .try	{display:block;background:#444;color:#FFF;text-align:center;line-height:2em;border:solid 1px #000;box-shadow:inset -0.25em -0.5em 1em #333}
-			#left .try:hover	{background:#333;box-shadow:inset -0.25em -0.5em 1em #222}
-		
+#middle	{text-align:center;margin:8em auto;width:54em}
+
+    #middle h2  {margin-bottom:1em;color:#888}
+        #middle div.inset-square {padding:1.5em;width:20em;height:28em;box-shadow:inset .2em .1em .5em #CCC;margin:1em;display:inline-block;float:left;background:#F4F8FC}
+            #middle div.inset-square h3 {color:#000;padding:.5em 0 1.5em 0}
+            #middle div.inset-square div.picture {height:12em;overflow:hidden}
+                #middle div.inset-square div.picture img {width:20em;position:relative}
+                #middle div.inset-square div.picture::after {content:"";display:block;position:absolute;top:0;left:0;bottom:0;right:0;box-shadow:inset .2em .1em .5em rgba(0,0,0,.25)}
+            #middle div.inset-square p {margin-top:1.5em;color:#444}
+                #middle div.inset-square p a {text-decoration:underline;color:#888}
+    
+	#left	{}
 	
-	
-	#right	{margin-left:22em;padding-top:2em;padding-right:1em}
+	#right	{}
 
-		#right dl	{}
-			#right dl dt	{font-size:2em;margin-bottom:36px}
-			#right dl dd	{margin-bottom:48px}
-				#right dl dd a	{text-decoration:underline}
-				#right dl dd a:hover	{text-decoration:none}
-				#right dl dd ul	{padding-left:32px;list-style:none}
-					#right dl dd ul li	{margin-top:8px;position:relative;color:black}
-					#right dl dd ul li:first-child	{margin-top:16px}
-					#right dl dd ul li:before	{content:"•";font-size:2em;line-height:0.5em;position:absolute;left:-1em;top:0.0625em}
-					
-					
-			#right dl dt.what a, #right dl dd.what li:before, #right dl dd.what a {color:#E72}
-			#right dl dd.what a:visited	{color:#A51}
-			
-			#right dl dt.who a, #right dl dd.who li:before, #right dl dd.who a {color:#EA0}
-			#right dl dd.who a:visited {color:#A80}
-			
-			#right dl dt.free a, #right dl dd.free li:before, #right dl dd.free a {color:#9D0}
-			#right dl dd.free a:visited {color:#790}
-			
-			#right dl dt.how a, #right dl dd.how li:before, #right dl dd.how a {color:#0CC}
-			#right dl dd.how a:visited {color:#099}
-			
-			#right dl dt.why a, #right dl dd.why li:before, #right dl dd.why a {color:#18E}
-			#right dl dd.why a:visited {color:#06A}
-			
-			#right dl dt.where a, #right dl dd.where li:before, #right dl dd.where a {color:#A7C}
-			#right dl dd.where a:visited {color:#959}
-			
-			#right dl dt.help a, #right dl dd.help li:before, #right dl dd.help a {color:#E6A}
-			#right dl dd.help a:visited {color:#A49}
 			
 			
-			
-			
-#bottom	{clear:both;margin-top:2em;border-top:solid 1px #CCC;background:#F8F8F8;padding:3em;color:#888}
-	#bottom a	{color:#444;text-decoration:none}
-	#bottom a:hover	{color:#222;text-decoration:underline}
+#bottom	{padding:2em 3em;box-shadow:inset 0 .25em .5em #888;color:#444;background:#EEE;opacity:.75;text-align:center}
+    #bottom a.logo {margin-left:1.5em}
+    #bottom a.logo:first-child {margin-right:0}
+        #bottom a.logo img {height:8em}
 		
 
 .windows	{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(128,128,128,0.7);z-index:100000}

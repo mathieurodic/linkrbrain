@@ -19,6 +19,12 @@
 		display="yes"
 	/>
 	<node
+		url="screenshots"
+		name="screenshots"
+		title="Screenshots"
+		display="yes"
+	/>
+	<node
 		url="contact"
 		name="contact"
 		title="Contact"

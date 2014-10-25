@@ -13,7 +13,7 @@
 			$this->description = "";
 			$this->contents = $this->body->append("div")->id("contents");
 			
-            foreach (array("top", "middle","bottom") as $id){
+            foreach (array("middle","bottom", "top") as $id){
 				$this->contents->$id = $this->contents->append("div")
                     ->id($id)->html( $file->html($id) );
 			}
