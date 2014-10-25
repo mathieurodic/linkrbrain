@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query>
+	<pointset>
+		<type name="raw" title="Raw coordinates" />
+		<type name="text" title="Text file" />
+		<type name="nifti" title="NIfTI file" />
+		<type name="tasks" title="List of tasks" />
+	</pointset>
+	
+</query>

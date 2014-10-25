@@ -1,0 +1,340 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+
+*	{margin:0;outline:0;border:0;padding:0;font-family:Ubuntu,sans-serif;position:relative
+	/*;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none*/}
+a	{text-decoration:none}
+ul,li	{list-style:none}
+frame	{border:0;frame-border:0;outline:0}
+table	{border-collapse:collapse}
+label,button,input[type=submit],input[type=file]	{cursor:pointer}
+label input[type=checkbox]	{position:relative;top:3px}
+html,body	{background:#FFF}
+
+.clear	{clear:both}
+.center	{text-align:center}
+.filler	{visibility:hidden}
+.grayed		{opacity:0.3}
+.warning	{color:#D10}
+.overlay	{position:absolute;left:0;top:0;width:100%;height:100%}
+
+.loading	{background:center no-repeat url(/loading.gif);opacity:0.25}
+	.loading *	{visibility:hidden}
+	.loading .loading-text	{visibility:visible}
+	
+:placeholder	{font-style:italic}
+::-webkit-input-placeholder	{font-style:italic}
+:-moz-placeholder	{font-style:italic}
+::-moz-placeholder	{font-style:italic}
+:-ms-input-placeholder	{font-style:italic}
+
+
+*	{font-family:Ubuntu;outline:0;border:0;margin:0;padding:0}
+a:hover	{text-decoration:none}
+body	{font-size:13px}
+
+
+
+#middle	{padding:1em}
+
+	#left	{float:left;width:16em}
+		#left *	{color:#888;text-decoration:none}
+		#left .logo, #left .menu, #left .try	{margin:1em;margin-bottom:2em;padding:1em}
+		#left .logo, #left .menu	{border:solid 1px #CCC;background:#F8F8F8}
+		#left .logo	{padding:1em 0}
+		#left .menu	{}
+			#left .logo span	{color:#CCC}
+			#left h1, #left p, #left ul	{}
+			#left h1, #left p	{text-align:center}
+			#left h1	{font-size:2em;font-weight:bold}
+			#left p	{font-size:0.7em;line-height:1.4em}
+			#left ul	{list-style:none;padding-top:1.5em}
+				#left li	{margin-bottom:1em;font-weight:bold;position:relative}
+					#left li a:hover	{color:#444}
+				#left li ul	{padding-top:0.25em;padding-left:0.125em}
+					#left li ul li	{padding:0;font-weight:normal;margin-bottom:0.2em;font-size:0.8em}
+			#left .try	{display:block;background:#444;color:#FFF;text-align:center;line-height:2em;border:solid 1px #000;box-shadow:inset -0.25em -0.5em 1em #333}
+			#left .try:hover	{background:#333;box-shadow:inset -0.25em -0.5em 1em #222}
+		
+	
+	
+	#right	{margin-left:22em;padding-top:2em;padding-right:1em}
+
+		#right dl	{}
+			#right dl dt	{font-size:2em;margin-bottom:36px}
+			#right dl dd	{margin-bottom:48px}
+				#right dl dd a	{text-decoration:underline}
+				#right dl dd a:hover	{text-decoration:none}
+				#right dl dd ul	{padding-left:32px;list-style:none}
+					#right dl dd ul li	{margin-top:8px;position:relative;color:black}
+					#right dl dd ul li:first-child	{margin-top:16px}
+					#right dl dd ul li:before	{content:"•";font-size:2em;line-height:0.5em;position:absolute;left:-1em;top:0.0625em}
+					
+					
+			#right dl dt.what a, #right dl dd.what li:before, #right dl dd.what a {color:#E72}
+			#right dl dd.what a:visited	{color:#A51}
+			
+			#right dl dt.who a, #right dl dd.who li:before, #right dl dd.who a {color:#EA0}
+			#right dl dd.who a:visited {color:#A80}
+			
+			#right dl dt.free a, #right dl dd.free li:before, #right dl dd.free a {color:#9D0}
+			#right dl dd.free a:visited {color:#790}
+			
+			#right dl dt.how a, #right dl dd.how li:before, #right dl dd.how a {color:#0CC}
+			#right dl dd.how a:visited {color:#099}
+			
+			#right dl dt.why a, #right dl dd.why li:before, #right dl dd.why a {color:#18E}
+			#right dl dd.why a:visited {color:#06A}
+			
+			#right dl dt.where a, #right dl dd.where li:before, #right dl dd.where a {color:#A7C}
+			#right dl dd.where a:visited {color:#959}
+			
+			#right dl dt.help a, #right dl dd.help li:before, #right dl dd.help a {color:#E6A}
+			#right dl dd.help a:visited {color:#A49}
+			
+			
+			
+			
+#bottom	{clear:both;margin-top:2em;border-top:solid 1px #CCC;background:#F8F8F8;padding:3em;color:#888}
+	#bottom a	{color:#444;text-decoration:none}
+	#bottom a:hover	{color:#222;text-decoration:underline}
+		
+
+.windows	{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(128,128,128,0.7);z-index:100000}
+	.window	{position:fixed;background:#FFF;outline:solid 1px #666;box-shadow:2px 2px 16px rgba(0,0,0,0.5);padding:4em 3em 2em 3em}
+		.window button.close	{color:#888;background:#FFF;font-size:32px;line-height:32px;position:absolute;right:3em;top:2em;padding:2em}
+		.window button.close:hover	{font-weight:bold}
+		.window h1	{color:#888;background:#FFF;font-size:2em;line-height:2em;position:relative;top:-1em;padding-bottom:1em}
+		.window p	{margin-bottom:1em}
+		.window a	{text-decoration:underline;color:#08F}
+		.window iframe	{outline:solid 1px #CCC;width:100%;height:50%}
+		.window ul.uploads	{margin-top:2em}
+			.window ul.uploads li	{border:solid 1px #CCC;border-top:0;padding:0.5em 0.75em;background:#F8F8F8}
+			.window ul.uploads li:first-child	{border-top:solid 1px #DDD}
+				.window ul.uploads li button	{float:right;font-weight:bold;background:#FFF;color:#888}
+				.window ul.uploads li button:hover	{color:#000}
+		.window .container	{overflow:auto}
+			.window ul.menu	{float:left;margin-right:4em;width:20%}
+				.window ul.menu	li {padding:1em;cursor:pointer;color:#888;border:solid 0px #888;margin-bottom:2px}
+				.window ul.menu	li:hover {border-width:1px;margin:0}
+				.window ul.menu	li.selected {cursor:default;color:#FFF;background:#888;border-width:1px;margin-bottom:0}
+			.window div.contents	{float:right;width:65%;height:100%;position:relative}
+				.window div.contents textarea	{border:solid 1px #888;resize:none;height:100%;width:100%;line-height:2em}
+				.window div.contents button.add	{position:absolute;left:0;bottom:-4.5em;border:solid 1px #000;background:#666;color:#FFF;height:10%;width:100%;padding:0 1px;letter-spacing:1px}
+				.window div.contents button.add:hover	{background:#444}
+				.window div.contents ul.tabs	{border:solid 1px #000;position:absolute;left:0;top:2em;width:100%;height:96%}
+					.window div.contents ul.tabs li.tab	{display:none;width:100%;height:100%;overflow:auto}
+					.window div.contents ul.tabs li.tab.selected	{display:block}
+				.window div.contents ul.tabs-select	{position:absolute;left:0;top:0}
+					.window div.contents ul.tabs-select li	{color:#AAA;border:solid 1px #AAA;border-bottom-color:#FFF;float:left;line-height:2em;height:2em;padding:0 2em;margin-right:1em;background:#FFF;cursor:pointer;top:-2px}
+					.window div.contents ul.tabs-select li.selected	{border-color:#000;color:#000;border-bottom:0;padding-bottom:2px}
+			.window form	{padding:1em;padding-top:0;box-shadow:0.1em 0.1em 0.5em rgba(0,0,0,0.25)}
+				.window form label	{cursor:pointer;color:#888;display:block;padding:1em 0}
+				.window form label.warning	{color:#D10}
+					.window form label div.input, .window form label input	{position:relative;top:-0.2em;width:70%;float:right;box-shadow:inset 0.1em 0.1em 0.5em rgba(0,0,0,0.25);padding:0.5em}
+					.window form label input.submit	{background:#444;color:#EEE;width:100%;float:none;padding:1em 0;outline:solid 1px #222}
+					.window form label input.submit:hover	{background:#333;color:#FFF}
+			.window table	{width:100%}
+				.window tbody	{}
+					.window tbody tr	{cursor:pointer}
+						.window tbody tr td	{padding:0.75em;opacity:0.75}
+						.window tbody tr:hover td	{opacity:1}
+						.window tbody tr.odd td	{background:#EEE}
+						.window tbody tr.even td	{background:#FFF}
+							.window tbody tr a	{color:#000;text-decoration:none}
+							.window tbody tr:hover a	{text-decoration:underline}
+							.window tbody td .group	{display:inline-block;margin-left:0.5em;padding:0.5em;border-radius:0.5em;font-weight:bold;color:#FFF;letter-spacing:1px}
+			.window .list	{}
+				.window .list li, .window .list label 	{padding:0.5em}
+				.window .list label 	{display:block}
+				.window .list .even	{background:#EEE}
+				.window .list .odd	{background:#FFF}
+				
+			.window .button	{display:block}
+			.window button	{}
+				.window .button, .window button	{margin-top:1em;color:#FFF;background:#666;padding:1em 0;cursor:pointer;text-decoration:none;text-align:center;width:100%}
+				.window .button:hover, .window button:hover 	{background:#444}
+
+
+
+/*	Uploader	*/
+.upload	{}
+	.upload form, .upload p, .upload div	{position:fixed}
+	.upload div	{left:0;top:0;width:100%;height:100%
+				;background:#EEE;box-shadow:inset -8px -8px 64px #DDD, inset +8px +8px 64px #FFF, inset +1px +1px 2px #444}
+	.upload form	{opacity:0;outline:red 1px solid;filter:alpha(opacity=1)}
+	.upload form, .upload form *	{cursor:pointer}
+	.upload p	{left:0;top:-16px;margin-top:50%;width:100%;height:32px
+				;line-height:16px;text-align:center;font-style:italic;color:#888}
+
+
+/*	Autocomplete	*/
+.ui-autocomplete	{background:#FFF;border:solid 1px #888;width:200px}
+	.ui-menu-item	{cursor:pointer;padding:2px 10px}
+	.ui-menu-item:hover	{background:#EEE;color:#08F}
+	.ui-helper-hidden-accessible	{display:none;visibility:hidden}
+
+/*	Datepicker		*/
+.ui-datepicker	{background:#FFF;border-radius:0 0 8px 8px;border: solid 1px #CCC;padding:16px;box-shadow:1px 1px 8px rgba(0,0,0,0.5)}
+	.ui-icon	{cursor:pointer;color:#08F;margin:16px 0}
+	.ui-datepicker-prev	{float:left}
+	.ui-datepicker-next	{float:right}
+	.ui-datepicker-title	{clear:both;border-top:solid #08F 1px;padding:8px 0}
+		.ui-datepicker-title *	{cursor:pointer;outline:0;border:0}
+	.ui-datepicker-calendar	{}
+		.ui-datepicker-calendar th	{padding:3px 0;border:solid #CCC;border-width:1px 0;background-color:#EEE}
+			.ui-datepicker-calendar th *	{color:#08F}
+		.ui-datepicker-calendar td	{width:24px;height:24px;text-align:center}
+			.ui-datepicker-calendar td *	{color:#000}
+		.ui-datepicker-calendar td.ui-datepicker-week-end	{}
+			.ui-datepicker-calendar td.ui-datepicker-week-end *	{color:#888}
+		.ui-datepicker-calendar td.ui-datepicker-current-day	{font-weight:bold;border-radius:2px;box-shadow:inset 1px 1px 3px rgba(0,0,0,0.5)}
+			.ui-datepicker-calendar td.ui-datepicker-current-day *	{color:#08F}
+		.ui-datepicker-calendar td:hover	{border-radius:2px;box-shadow:inset 1px 1px 3px rgba(0,0,0,0.25)}
+			.ui-datepicker-calendar td:hover a	{color:#06C}
+			.ui-datepicker-calendar td:active a	{font-weight:bold}
+			
+			
+/*	MiniColors	*/
+input.miniColors {
+	margin-right: 4px;
+}
+.miniColors-selector {
+	position: absolute;
+	width: 175px;
+	height: 150px;
+	background: white;
+	border: solid 1px #bababa;
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .25);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .25);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	z-index: 999999;
+}
+.miniColors.opacity.miniColors-selector {
+	width: 200px;
+}
+.miniColors-selector.black {
+	background: black;
+	border-color: black;
+}
+.miniColors-selector.gray {
+	background: #DDD;
+	border-color: #EEE;
+}
+.miniColors-colors {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 150px;
+	height: 150px;
+	background: url(miniColors/colors.png) -40px 0 no-repeat;
+	cursor: crosshair;
+}
+.miniColors.opacity .miniColors-colors {
+	left: 30px;
+}
+.miniColors-hues {
+	position: absolute;
+	top: 5px;
+	left: 160px;
+	width: 20px;
+	height: 150px;
+	background: url(miniColors/colors.png) 0 0 no-repeat;
+	cursor: crosshair;
+}
+.miniColors.opacity .miniColors-hues {
+	left: 185px;
+}
+
+.miniColors-opacity {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 150px;
+	background: url(/miniColors/colors.png) -20px 0 no-repeat;
+	cursor: crosshair;
+}
+.miniColors-colorPicker {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	border: 1px solid black;
+	-moz-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+}
+.miniColors-colorPicker-inner {
+	position: absolute;
+	top: 0;
+	left: 0; 
+	width: 7px;
+	height: 7px;
+	border: 2px solid white;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+.miniColors-huePicker,
+.miniColors-opacityPicker {
+	position: absolute;
+	left: -2px;
+	width: 22px;
+	height: 2px;
+	border: 1px solid black;
+	background: white;
+	margin-top: -1px;
+	border-radius: 2px;
+}
+.miniColors-trigger, 
+.miniColors-triggerWrap {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+}
+.miniColors-triggerWrap {
+	float:right
+}
+.miniColors-triggerWrap.disabled {
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+#right .miniColors-trigger {
+	display:block;
+	border:solid 1px #CCC;
+	float:right;
+	background:#EEE;
+	width:40px;
+	padding:0 4px;
+	line-height:28px;
+	height:28px;
+	box-shadow:inset -2px -2px 16px rgba(0,0,0,0.5),inset +2px +2px 16px rgba(255,255,255,1)
+}
+.miniColors-triggerWrap.disabled .miniColors-trigger {
+	cursor: default;
+}
+
+.viewBrain2D	{position:relative}
+	.viewBrain2D *	{margin:0;outline:0;border:0;padding:0;color:#FFF;font-family:'Courier New'}
+	.viewBrain2D table	{border-collapse:collapse}
+	.viewBrain2D table:first-child	{position:absolute;left:0;top:0;background-color:#000}
+		.viewBrain2D td	{cursor:crosshair;position:relative;overflow:hidden}
+		.viewBrain2D tr:first-child td:first-child	{vertical-align:top;cursor:default}
+			.viewBrain2D div.events	{position:absolute;left:0;top:0;width:100%;height:100%}
+			.viewBrain2D label	{display:block;margin-left:10%;width:80%}
+			.viewBrain2D label:first-child	{margin-top:20px}
+				.viewBrain2D input	{width:50%;background-color:#000}
+			.viewBrain2D img	{position:absolute;display:block;cursor:crosshair;left:0;width:100%}
+
+			
+.sidebar	{}
+	.sidebar li	{width:5em;height:6em;padding:0.5em 1em;opacity:0.45;cursor:pointer}
+	.sidebar:hover li	{opacity:0.45}
+	.sidebar li:hover	{opacity:1}
+		.sidebar li div	{width:3em;height:3em;margin:1em;margin-bottom:0.5em;position:relative;overflow:hidden}
+			.sidebar li div img	{width:3em;position:absolute;left:0;top:0}
+		.sidebar li p	{color:#000;height:3em;text-align:center;font-weight:bold}

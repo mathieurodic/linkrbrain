@@ -1,0 +1,32 @@
+AddDefaultCharset       utf-8
+RewriteEngine           On
+
+
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text/css
+<Files *.obj>
+        SetOutputFilter DEFLATE
+</Files>
+
+
+
+RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]
+RewriteRule                     ^/?(.+\.(gif|jpe?g|png))$               /data/images/$1                                 [L]
+
+RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]
+RewriteRule                     /?([^/]+\.json)$                                /data/json/$1                                   [L]
+
+RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]
+RewriteRule                     /?([^/]+\.obj)$                                 /data/obj/$1                                    [L]
+
+RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]
+RewriteRule                     /?([^/]+\.js)$                                  /js/$1                                                  [L]
+
+RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]
+RewriteRule                     /?([^/]+\.(css|js))$                    /$2/$1                                                  [L]
+
+
+
+RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]
+RewriteRule                     .+                                                              /index.php                                           [L]
+

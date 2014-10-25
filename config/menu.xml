@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<nodes>
+	<node
+		url=""
+		name="presentation"
+		title="{ linkRbrain }"
+		display="yes">
+	</node>
+	<node
+		url="query"
+		name="query"
+		title="Query"
+		display="yes"
+	/>
+	<node
+		url="about"
+		name="about"
+		title="About us"
+		display="yes"
+	/>
+	<node
+		url="contact"
+		name="contact"
+		title="Contact"
+		display="yes"
+	/>
+	
+	<node
+		url="upload"
+		name="upload"
+		title=""
+		display="no"
+	/>
+	<!--
+	<node
+		url="test"
+		name="test"
+		title="test"
+		display="no"
+	/>
+	<node
+		url="blank"
+		name="blank"
+		title="blank"
+		display="no"
+	/>
+	<node
+		url="tasks"
+		name="tasks"
+		title="Browse tasks"
+		display="yes"
+	/>
+	-->
+</nodes>

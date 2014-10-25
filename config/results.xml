@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+	<node href="" caption="Datasets" />
+	<node href="view" caption="View activated zones (2D or 3D)" />
+	<node href="graph" caption="Graph representation of datasets and tasks" />
+	<node href="correlation" caption="Correlation scores between datasets and tasks" />
+</result>

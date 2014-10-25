@@ -1,0 +1,51 @@
+
+Improving family weights for the UbuntuTitle typeface
+June 2007, Paulo Silva
+
+These family member weight variations has the simple purpose to enrich the Ubuntu default 
+typefaces sources for their graphical content (just like happened with ubuntustudio distribution logo,
+and other situations like advertising, or more specific graphism needs, which may need some typeface 
+weight articulation)
+
+Started to include accents on the regular version from Andrew Fitzsimon - for example, my native language,
+portuguese, in a current average text, has around 20% of words using accented characters... - interesting 
+would be not only filling the latin ascii accented characters, as well eastern and asian accented latin
+characters (provided by unicode encoding).
+
+Important: measures used for reference (for the stroke sizes, in inkscape units)
+
+id - inkscpe (diff)   -fntf?- fmmmbname
+---------------------------------------------------
+05 -  18.75 ( -88.25) -  70 - skinny ------ needs fixes
+15 -  26.75 ( -80.25) - 100 - ultralight -- needs fixes
+25 -  37.50 ( -69.50) - 140 - extralight -- needs fixes
+35 -  53.50 ( -53.50) - 200 - light  ------ needs fixes (accented spacings?)
+45 -  75.00 ( -32.00) - 280 - book -------- needs fixes
+55 - 107.00 (   0.00) - 400 - regular  ---- <-! - original - needs fixes
+65 - 150.00 (+ 43.00) - 560 - bold   ------ needs fixes
+75 - 214.00 (+107.00) - 800 - extrabold --- ?
+85 - 300.00 (+193.00) -1120 - ultrabold --- ?
+95 - 428.00 (+321.00) -1600 - heavy   ----- ?
+
+the values for this table are reference for the strokes of the character shapes, as well for the
+spacing adjust for the new weights
+
+(these family member names may have mistakes about some norms used from some typeface authors or foundries)
+(the measures are related in a square root of 2 (around .7), used also in din paper formats (like A4) )- 
+measure exactly halves in each 2 steps
+
+---------------
+
+note about inkscape-fontforge 'connectivity' (while the clipboard still doesn't works between both):
+- the fonts drawn on inkscape (svg) are imported into one character cell, each character cutted out to 
+their destination cell, and dragged into their desired coordinate location
+
+some people with typographic culture or sensibility may realize these typefaces has some very basic and naif
+drawing mistakes (well, Giambatista Bodoni at baroque period also made his own as well, and for sure 
+Andrew Fitzsimon may have notion of it...) - personally i had no intention to fix them, since UbuntuTitle has 
+now a becoming strong identity with the becoming the most popular Linux distribution, as well maybe some of 
+their naif mistakes may make it as unique... - my main concern is to have a wide choice of weights for 
+UbuntuTitle typeface - the needed fixes i think is a task for the whole community! ;-) (as well including
+cyrillic, arabic, greek, georgian, ethiopian, armenian, hangul, indians (tamil, kannada, malayalam, etc.), 
+etc., charsets...)
+
