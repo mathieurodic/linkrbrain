@@ -8,6 +8,10 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text
         SetOutputFilter DEFLATE
 </Files>
 
+<IfModule mod_php5.c>
+   php_value short_open_tag 1
+ </IfModule>
+ 
 
 
 RewriteCond                     %{REQUEST_FILENAME}                             !-f                                                             [NC]

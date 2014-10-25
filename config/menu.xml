@@ -13,9 +13,9 @@
 		display="yes"
 	/>
 	<node
-		url="about"
-		name="about"
-		title="About us"
+		url="people"
+		name="people"
+		title="Our team"
 		display="yes"
 	/>
 	<node

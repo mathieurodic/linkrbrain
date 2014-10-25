@@ -37,6 +37,7 @@
 					if ($attributes["url"] == $url[0]){
 						$pageName = (string)$attributes["name"];
 						$pageTitle = (string)$attributes["title"];
+                        break;
 					}
 				}
 				$page = $file->page($pageName);

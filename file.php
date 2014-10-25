@@ -13,7 +13,7 @@
 		}
 		
 		function php($name){
-			if (is_file("$this->rootdir/$name.php")){
+            if (is_file("$this->rootdir/$name.php")){
 				require_once "$this->rootdir/$name.php";
 				return true;
 			}
