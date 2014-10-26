@@ -36,7 +36,8 @@ body	{font-size:13px}
 
 #top {background:#EEE;padding:.5em 0 1em 0;text-align:center;box-shadow:0 .2em .75em rgba(0,0,0,0.25);position:fixed;width:100%;left:0;top:0;border-bottom:solid 1px #CCC;opacity:.97}
     #top *  {color:#444;text-shadow:0em .2em .2em rgba(0,0,0,.25)}
-    #top a:hover    {color:#000}
+    #top a {color:#000}
+    #top a:hover {color:#666}
     #top .logo, #top .menu  {}
     #top .logo  {}
         #top .logo * {color:#888}
@@ -50,7 +51,7 @@ body	{font-size:13px}
 
 #middle	{text-align:center;margin:8em auto;width:54em}
 
-    #middle h2  {margin-bottom:1em;color:#888}
+    #middle h2  {margin:1em 0;color:#888}
         #middle div.inset-square {padding:1.5em;width:20em;height:28em;box-shadow:inset .2em .1em .5em #CCC;margin:1em;display:inline-block;float:left;background:#F4F8FC}
             #middle div.inset-square h3 {color:#000;padding:.5em 0 1.5em 0}
             #middle div.inset-square div.picture {height:12em;overflow:hidden}
@@ -58,6 +59,12 @@ body	{font-size:13px}
                 #middle div.inset-square div.picture::after {content:"";display:block;position:absolute;top:0;left:0;bottom:0;right:0;box-shadow:inset .2em .1em .5em rgba(0,0,0,.25)}
             #middle div.inset-square p {margin-top:1.5em;color:#444}
                 #middle div.inset-square p a {text-decoration:underline;color:#888}
+    #middle form {}
+        #middle form textarea, #middle form input   {display:inline;width:40em;box-shadow:inset .1em .2em .5em #888;margin-bottom:1em;padding:1em;font-size:1em}
+        #middle form textarea {height:8em}
+        #middle form input.submit {color:#CCC;background:#444;box-shadow:.1em .2em .5em #888;width:42em;position:relative;left:-1px}
+        #middle form input.submit:hover {color:#EEE;background:#111}
+        #middle form input.submit:active {font-weight:bold}
     
 	#left	{}
 	
