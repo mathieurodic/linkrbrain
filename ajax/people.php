@@ -8,19 +8,19 @@
 		
 		function render(){
             $expediteur = $this->data->email;
-            $headers = "From: $expediteur\r\nReply-To: $expediteur\r\n";
-            $result = 0;
-            foreach (["mathieu@rodic.fr"] as $destinataire) {
-                $result += mail(
-                    $destinataire,
-                    "{linkRbrain} Message sent from the website",
-                    $this->data->message,
-                    $headers,
-                    "-f$expediteur"
-                ) ? 1 : 0;
-            }
+            $result = mail(
+                "mathieu@rodic.fr",
+                "{linkRbrain} Message sent from the website",
+                nl2br(htmlentities($this->data->message)),
+                implode("\r\n", [
+                    "From: $expediteur",
+                    "CC: salma.mesmoudi@gmail.com"
+                    "Reply-To: $expediteur"
+                ]),
+                "-f$expediteur"
+            );
             $this->output = [
-                ["selector"=>"form[name=people]", "method"=>"html", "argument"=>"Your message has " . ($result ? "" : "not ") . "been sent."]
+                ["selector"=>"form[name=people]", "method"=>"html", "argument"=>$result?"Your message has been sent.":"Your message could not be sent. Please try again later."]
             ];
             return parent::render();
         }
