@@ -11,7 +11,7 @@
             $result = mail(
                 "mathieu@rodic.fr",
                 "{linkRbrain} Message sent from the website",
-                nl2br(htmlentities($this->data->message)),
+                "<html><body>" . nl2br(htmlentities($this->data->message)) . "</body></html>",
                 implode("\r\n", [
                     "From: $expediteur",
                     "CC: salma.mesmoudi@gmail.com"
