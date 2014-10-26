@@ -14,7 +14,8 @@
                 "<html><body>" . nl2br(htmlentities($this->data->message)) . "</body></html>",
                 implode("\r\n", [
                     "From: $expediteur",
-                    "CC: salma.mesmoudi@gmail.com",
+                    "Content-Type: text/html; charset=utf-8",
+                    // "CC: salma.mesmoudi@gmail.com",
                     "Reply-To: $expediteur"
                 ]),
                 "-f$expediteur"
