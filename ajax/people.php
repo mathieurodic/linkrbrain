@@ -21,7 +21,10 @@
                 "-f$expediteur"
             );
             $this->output = [
-                ["selector"=>"form[name=people]", "method"=>"html", "argument"=>$result?"Your message has been sent.":"Your message could not be sent. Please try again later."]
+                [   "selector"=>"form[name=people]",
+                    "method"=>"html",
+                    "argument"=>$result ? "Your message has been sent." : "Your message could not be sent. Please try again later."
+                ]
             ];
             return parent::render();
         }
