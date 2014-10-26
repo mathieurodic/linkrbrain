@@ -15,7 +15,7 @@
                 implode("\r\n", [
                     "From: $expediteur",
                     "Content-Type: text/html; charset=utf-8",
-                    // "CC: salma.mesmoudi@gmail.com",
+                    "CC: salma.mesmoudi@gmail.com",
                     "Reply-To: $expediteur"
                 ]),
                 "-f$expediteur"
