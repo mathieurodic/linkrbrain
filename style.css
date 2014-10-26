@@ -65,6 +65,7 @@ body	{font-size:13px}
         #middle form input.submit {color:#CCC;background:#444;box-shadow:.1em .2em .5em #888;width:48em;position:relative;left:-1px}
         #middle form input.submit:hover {color:#EEE;background:#111}
         #middle form input.submit:active {font-weight:bold}
+        #middle form .wrong {color:#800;box-shadow:inset .1em .2em .5em #800}
     
 	#left	{}
 	

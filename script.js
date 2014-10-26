@@ -355,7 +355,16 @@ $.fn.niceForms = function(){
 	}).change(function(){
 		$(this).removeClass('wrong');
 	}).blur();
-	//	Auto-resizing textarea
+	//  Email fields
+    this.find('input.email').change(function(){
+        var input = $(this);
+        var value = input.val();
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(value)) {
+            input.addClass('wrong');
+        }
+    });
+    //	Auto-resizing textarea
 	this.find('textarea').filter(function(){
 			return $(this).css('resize') != 'none';
 		}).autosize();
