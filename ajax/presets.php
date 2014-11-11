@@ -84,7 +84,7 @@
 		}
 		function render(){
 			$this->data->type = preg_replace("@s$@", "", $this->data->type);
-			if (!in_array($this->data->type, array("task","gene"))){
+			if (!in_array($this->data->type, array("task","gene","area"))){
 				return;
 			}
 			$rs = mysql_query($this->sql());

@@ -35,16 +35,26 @@ t0 = time()
 for preset_type, preset_id, rscore in rows:
 	t1 = time()
 	# hopla
-	cursor.execute(
-	'''	UPDATE
-			preset_preset
-		SET
-			nscore = nscore / %s
-		WHERE
-			preset1_type = %s
-		AND
-			preset1_id = %s
-	''', (rscore, preset_type, preset_id))
+	# cursor.execute(
+	# '''	UPDATE
+	# 		preset_preset
+	# 	SET
+	# 		nscore = nscore / %s
+	# 	WHERE
+	# 		preset1_type = %s
+	# 	AND
+	# 		preset1_id = %s
+	# ''', (rscore, preset_type, preset_id))
+	# cursor.execute(
+	# '''	UPDATE
+	# 		preset_preset
+	# 	SET
+	# 		nscore = nscore / %s
+	# 	WHERE
+	# 		preset2_type = %s
+	# 	AND
+	# 		preset2_id = %s
+	# ''', (rscore, preset_type, preset_id))
 	cursor.execute(
 	'''	UPDATE
 			preset_preset

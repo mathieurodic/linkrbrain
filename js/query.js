@@ -1,8 +1,8 @@
 var pointsetTypes =
 [	{	title		:	'Presets'
 	,	name		:	'presets'
-	,	description	:	'Known mappings for cognitive tasks & genes'
-	,	html		:	'<ul class="tabs"><li class="tab"></li><li class="tab"></li></ul><ul class="tabs-select"><li>Tasks</li><li>Genes</li></ul>'
+	,	description	:	'Known mappings for cognitive tasks, genes and areas'
+	,	html		:	'<ul class="tabs"><li class="tab"></li><li class="tab"></li><li class="tab"></li></ul><ul class="tabs-select"><li>Tasks</li><li>Genes</li><li>Areas</li></ul>'
 	,	initalize	:	function(){
 							var contents = $(this);
 							var tabs = contents.find('ul.tabs li');
@@ -10,6 +10,7 @@ var pointsetTypes =
 							//	Tabs management
 							tabsSelect.each(function(i){
 								var tabSelect = $(this);
+								console.log(tabSelect.text())
 								var tab = tabs.eq(i);
 								var div = $('<div>').addClass('list-search').appendTo(tab);
 								var input = $('<input type="text">').prependTo(div);
@@ -536,7 +537,7 @@ var query = new (function(selector){
 				var frameTitle = frames.correlations.htmlTitle;
 				$('<span>').text('Correlation with ').appendTo(frameTitle);
 				//	Create buttons
-				$.each(['tasks','genes'], function(){
+				$.each(['tasks','genes','areas'], function(){
 					$('<button>').text(this).appendTo(frameTitle);
 				});
 				//	Add events to buttons

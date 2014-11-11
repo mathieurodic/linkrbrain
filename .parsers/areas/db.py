@@ -20,3 +20,19 @@ class PointsCache(dict):
 		return _id
 
 pointsCache = PointsCache()
+
+
+# cache for keywords ids
+class KeywordsCache(dict):
+	def __missing__(self, key):
+		cursor.execute('SELECT id FROM keyword WHERE word = %s', key)
+		row = cursor.fetchone()
+		if row:
+			_id = row[0]
+		else:
+			cursor.execute('INSERT INTO keyword (word) VALUES (%s)', key)
+			_id = cursor.lastrowid
+		self[key] = _id
+		return _id
+
+keywordsCache = KeywordsCache()

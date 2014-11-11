@@ -21,8 +21,9 @@ rows = cursor.fetchall()
 
 print '\nUpdating...'
 t0 = time()
-for preset_type, preset_id, rscore in rows:
+for preset_type, preset_id, score in rows:
 	t1 = time()
+	rscore = sqrt(score)
 	# hopla
 	cursor.execute(
 	'''	UPDATE
